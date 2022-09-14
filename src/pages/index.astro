@@ -1,1 +1,19 @@
-<div class='max-w-3xl min-h-screen bg-gray-100 mx-auto'>t</div>
+---
+import Card from '@components/Card'
+import Layout from '@layouts/Layout'
+---
+
+<Layout>
+  <div class="bg-gradient-to-br from-teal-100 to-blue-100">
+    <main class="max-w-3xl min-h-screen bg-white mx-auto flex flex-col items-center">
+      <div class="py-16 p-4">
+        <h1 class="text-center mb-2 font-bold text-4xl md:text-5xl tracking-wide">Collection of slides</h1>
+        <p class="text-center text-base md:text-xl text-gray-700">powered by reveal.js and served by Astro</p>
+      </div>
+
+      <div class="w-full md:px-8 px-4 grid md:grid-cols-2 grid-cols-1 gap-4">
+        <Card title="About me" description="EOY 2022 slides retrospective" href="about-me" />
+      </div>
+    </main>
+  </div>
+</Layout>
