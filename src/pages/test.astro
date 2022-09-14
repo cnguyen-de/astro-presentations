@@ -1,0 +1,57 @@
+---
+import Reveal from "@layouts/Reveal";
+import MDSlide from "@components/MDSlide";
+import Slide from "@components/Slide";
+import Card from '@components/Card'
+
+---
+<Reveal title="Testerino">
+<MDSlide>
+{
+`<!-- .slide: data-background="#00FF00" -->
+# Green BG
+`
+}
+</MDSlide>
+
+<Slide bgColor="#f00">
+    <h1>Red BG</h1>
+</Slide>
+
+<Slide>
+    <Card title="Card title" body="Card body" href="https://somelink.com"></Card>
+</Slide>
+
+
+<MDSlide>
+<textarea data-template>
+```js [1-2|3|4]
+const x = y;
+const x = z;
+console.log(x)
+c(3);
+```
+</textarea>
+</MDSlide>
+
+<section 
+        data-markdown data-separator="^\n---\n$" 
+        data-separator-vertical="^\n--\n$">
+    <script type="text/template">
+        ## Demo 2
+        Slide 1.1
+
+        --
+
+        ## Demo 2
+        Slide 1.2
+
+        ---
+
+        ## Demo 2
+        Slide 2
+    </script>
+</section>
+
+
+</Reveal>
