@@ -9,8 +9,10 @@ const { title, description, href } = Astro.props
 ---
 
 <a href={href}>
-  <div class="card px-8 py-4 rounded-lg shadow-lg bg-white hover:bg-sky-50 cursor-pointer h-32">
+  <div
+    class="card px-8 py-4 rounded-lg shadow-lg bg-white dark:bg-gray-200 hover:bg-sky-50 cursor-pointer h-full min-h-[150px]"
+  >
     <h3 class="py-2 text-xl font-bold text-gray-800">{title}</h3>
-    <p class="text-gray-600">{description}</p>
+    <p class="pb-2 text-gray-500">{description}</p>
   </div>
 </a>

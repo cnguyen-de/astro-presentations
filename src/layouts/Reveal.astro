@@ -31,7 +31,6 @@ const { title, theme = 'black', logo = false } = Astro.props
     <script is:inline src="/reveal/plugin/markdown/markdown.js"></script>
     <script is:inline src="/reveal/plugin/highlight/highlight.js"></script>
     <script is:inline src="/reveal/plugin/notes/notes.js"></script>
-    <script is:inline src="/reveal/plugin/math/math.js"></script>
 
     <script>
       Reveal.initialize({
@@ -39,8 +38,7 @@ const { title, theme = 'black', logo = false } = Astro.props
         progress: true,
         history: true,
         center: true,
-
-        plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX]
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
       })
     </script>
   </body>
