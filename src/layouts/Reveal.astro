@@ -8,29 +8,29 @@ const { title, theme = 'black', logo = false } = Astro.props
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
   <head>
-    <meta charset="utf-8" />
+    <meta charset='utf-8' />
 
     <title>{title}</title>
 
-    <link rel="stylesheet" href="/reveal/reveal.css" />
-    <link rel="stylesheet" href=`/reveal/theme/${theme}.css` id="theme" />
-    <link rel="stylesheet" href="/reveal/plugin/highlight/monokai.css" />
+    <link rel='stylesheet' href='/reveal/reveal.css' />
+    <link rel='stylesheet' href=`/reveal/theme/${theme}.css` id='theme' />
+    <link rel='stylesheet' href='/reveal/plugin/highlight/monokai.css' />
   </head>
 
   <body>
-    <div class="reveal relative">
-      <div class="slides">
+    <div class='reveal relative'>
+      <div class='slides'>
         <slot />
       </div>
-      {logo && <img src="/logo.png" alt="" class="absolute bottom-12 right-24 w-36" />}
+      {logo && <img src='/logo.png' alt='' class='absolute bottom-12 right-24 w-36' />}
     </div>
 
-    <script is:inline src="/reveal/reveal.js"></script>
-    <script is:inline src="/reveal/plugin/markdown/markdown.js"></script>
-    <script is:inline src="/reveal/plugin/highlight/highlight.js"></script>
-    <script is:inline src="/reveal/plugin/notes/notes.js"></script>
+    <script is:inline src='/reveal/reveal.js'></script>
+    <script is:inline src='/reveal/plugin/markdown/markdown.js'></script>
+    <script is:inline src='/reveal/plugin/highlight/highlight.js'></script>
+    <script is:inline src='/reveal/plugin/notes/notes.js'></script>
 
     <script>
       Reveal.initialize({
@@ -43,3 +43,13 @@ const { title, theme = 'black', logo = false } = Astro.props
     </script>
   </body>
 </html>
+
+<style>
+  html {
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  }
+</style>
