@@ -2,9 +2,105 @@
 import Reveal from '@layouts/Reveal'
 import MDSlide from '@components/reveal/MDSlide'
 import Slide from '@components/reveal/Slide'
+import Profile from '@components/Profile'
 ---
 
-<Reveal title="Testerino" logo="true">
-  <Slide>Test</Slide>
-  <Slide>Test 2</Slide>
+<Reveal title="Chi Nguyen 2022" logo="true">
+  <Slide>Minh Chi Nguyen</Slide>
+  <Slide>
+    <Profile>
+      <p class="text-3xl !my-1 text-gray-300">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6 inline"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"></path>
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+          >
+          </path>
+        </svg>
+        Frankfurt am Main
+      </p>
+      <p class="text-3xl !my-1 text-gray-300">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6 inline"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"
+          >
+          </path>
+        </svg>
+        01.02.2020
+      </p>
+    </Profile>
+  </Slide>
+
+  <section 
+    data-auto-animate
+    data-markdown data-separator="^\n----\n$" 
+    data-separator-vertical="^\n--\n$">
+    <script type="text/template">
+      ## Intern
+
+      --
+
+      ## TASKANA
+      - Modernisierung der Architektur mit Redux Pattern
+      - Angular auf aktuelle Version und für die Zukunft bereitstellen
+
+      --
+
+      ## Cumulocity
+      - Analyse zur Erstellung eines Frontend POC mit three.js 
+
+      --
+
+      ## Mentor
+      - Tristan Eisermann (Bachelorand -> Junior SWE)
+      - Sofie Hofmann (TASKANA Werkstudent)
+      - Franziska Bock
+
+      ----
+
+      ## Extern
+
+      --
+
+      ## LBBW
+      - Frontend-Architekt
+      - Micro-frontend im Einsatz gebracht
+      - POC mit Angular implementiert
+
+      --
+
+      ## SOKA-BAU
+      - Frontend-Lead
+      - Gesamtes AR-System mit moderner Architektur implementiert
+      - Projekt wurde mit höchst Zufriedenheit abgeschlossen
+
+      --
+
+      ## MB.io
+      - Frontend Entwickler
+      - Ein neues Microservice deployed: sitemap-generator
+      - Verwortung für Modernisierung der Frontend-Entwicklung:
+        - Neues Buildtool: Vite (3 Minuten -> 3s Buildzeit)
+        - Docs As Code
+        - Vue 3, TypeScript und mehr
+    </script>
+  </section>
 </Reveal>

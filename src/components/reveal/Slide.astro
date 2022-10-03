@@ -2,10 +2,19 @@
 export interface Props {
   bgColor?: string
   className?: string
+  animate?: boolean
 }
-const { bgColor, className } = Astro.props
+const { bgColor, className, animate } = Astro.props
 ---
 
-<section data-background-color={bgColor} class={className}>
-  <slot />
-</section>
+{
+  animate ? (
+    <section data-background-color={bgColor} class={className} data-auto-animate>
+      <slot />
+    </section>
+  ) : (
+    <section data-background-color={bgColor} class={className}>
+      <slot />
+    </section>
+  )
+}
