@@ -24,7 +24,7 @@ const { title, theme = 'black', logo = false } = Astro.props
       <div class="slides">
         <slot />
       </div>
-      {logo && <img src="/logo.png" alt="" class="absolute bottom-[4%] right-[10%] w-36" />}
+      {logo && <img src="/logo.png" alt="" class="absolute z-10 bottom-[4%] right-[10%] w-36" />}
     </div>
 
     <script is:inline src="/reveal/reveal.js"></script>
@@ -37,6 +37,7 @@ const { title, theme = 'black', logo = false } = Astro.props
         controls: true,
         progress: false,
         history: true,
+        slideNumber: true,
         center: true,
         plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
       })
@@ -44,12 +45,19 @@ const { title, theme = 'black', logo = false } = Astro.props
   </body>
 </html>
 
-<style>
+<style is:global>
   html {
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
+  }
+  .reveal .slide-number {
+    right: unset;
+    left: 10px;
+    background: none;
+    font-size: 18px;
+    font-weight: 700;
   }
 </style>
