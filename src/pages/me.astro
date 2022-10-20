@@ -2,6 +2,7 @@
 import Reveal from '@layouts/Reveal'
 import Slide from '@components/reveal/Slide'
 import Profile from '@components/Profile'
+import TechIcon from '@components/TechIcon'
 
 const gradientRedPurple = "linear-gradient(to bottom right, #2d234a, #722226)"
 const gradientBlueCyan = "linear-gradient(to bottom right, #0f564a, #1a5c75)"
@@ -185,10 +186,27 @@ const gradientBlueCyan = "linear-gradient(to bottom right, #0f564a, #1a5c75)"
     <p>Neue Web Technologien</p>
   </Slide>
 
-  <Slide>
-    <img class="w-24 h-24 left-50 top-50 z-20" src="https://vitejs.dev/logo-with-shadow.png" />
-    <img class="w-48 h-48 left-80 top-50 z-20" src="https://vitejs.dev/logo-with-shadow.png" />
-    list of tech: Angular, Vue, React, Nextjs, Vite, Rollup, Pinia, Tailwindcss, Unocss, 
+  <Slide className="absolute left-0 top-0 w-[60vw] h-[55vh]" bgGradient={gradientRedPurple}>
+    <div class="absolute top-0 left-0 h-full w-full">
+      <div class="first-row flex flex-row gap-16 absolute top-0 w-full justify-center">
+        <TechIcon className="w-32 h-32" name="Slidev" logo="https://raw.githubusercontent.com/slidevjs/slidev/main/assets/logo.svg" />
+        <TechIcon className="w-32 h-32" name="Revealjs" logo="https://revealjs.com/images/logo/reveal-symbol.svg" />
+        <TechIcon className="w-32 h-32" name="Tailwind" logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2048px-Tailwind_CSS_Logo.svg.png" />
+      </div>
+      
+      <div class="middle-row flex flex-row gap-16 absolute top-1/3 w-full justify-center">
+        <TechIcon className="w-32 h-32" name="Astro" logo="favicon.svg" />
+        <TechIcon className="w-32 h-32" name="Next.js" logo="https://seeklogo.com/images/N/next-js-logo-8FCFF51DD2-seeklogo.com.png" />  
+        <TechIcon className="w-32 h-32" name="Remix" logo="https://avatars.githubusercontent.com/u/64235328" />  
+        <TechIcon className="w-32 h-32" name="NuxtJS" logo="https://nuxtjs.org/_nuxt/img/logo.d0868f5.svg" />  
+      </div>
+
+      <div class="last-row flex flex-row gap-16 absolute bottom-20 w-full justify-center">
+        <TechIcon className="w-32 h-32" name="Vercel" logo="https://camo.githubusercontent.com/add2c9721e333f0043ac938f3dadbc26a282776e01b95b308fcaba5afaf74ae3/68747470733a2f2f6173736574732e76657263656c2e636f6d2f696d6167652f75706c6f61642f76313538383830353835382f7265706f7369746f726965732f76657263656c2f6c6f676f2e706e67" />
+        <TechIcon className="w-32 h-32" name="Vite" logo="https://vitejs.dev/logo-with-shadow.png"/>
+        <TechIcon className="w-32 h-32" name="Rollup" logo="https://camo.githubusercontent.com/50e43473527a57747fb7cd9b0061355205ac9a2763207a78d9812ceef1da52c0/68747470733a2f2f726f6c6c75706a732e6f72672f6c6f676f2e737667" />
+      </div>
+    </div>  
   </Slide>
 
   <section 
