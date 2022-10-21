@@ -38,7 +38,8 @@ const { title, theme = 'black', logo = false } = Astro.props
         progress: false,
         history: true,
         slideNumber: true,
-        transition: 'none',
+        transition: 'slide',
+        transitionSpeed: 'fast',
         center: true,
         plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
       })
