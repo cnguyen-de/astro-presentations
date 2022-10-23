@@ -9,6 +9,7 @@ const { logo, className, name } = Astro.props
 
 ---
 <div class={`flex flex-col group hover:scale-125 transition duration-150 ${className}`}>
-    <img class="w-full h-full !my-0  rounded-lg" src={logo} />
+    <img class="w-full h-full !my-0 rounded-lg z-10" src={logo} />
+    <div class="absolute w-full h-full top-0 left-0 bg-white blur-3xl hidden group-hover:block transition duration-150"></div>
     <div class="group-hover:text-white text-transparent transition-all duration-150 text-center">{name}</div> 
 </div>

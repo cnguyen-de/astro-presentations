@@ -8,6 +8,9 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans]
+      },
+      dropShadow: {
+        '3xl': '0 35px 35px rgba(255, 255, 255, 0.25)'
       }
     }
   },
